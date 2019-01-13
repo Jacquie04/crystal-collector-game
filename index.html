@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector Game</title>
+    <link rel="stylesheet" href="./Assets/CSS/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Charm|Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+
+body {
+    background-image: url("./Assets/Images/background.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="jumbotron">
+
+
+
+    <h1 class= "text-center text-white">Crystals Collector Game</h1>
+
+</div>
+
+<div class="container text-white">
+
+    <ul>
+
+    <li>You will be given a random number at the start of the game.</li>
+    <br>
+    <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+    <br>
+    <li>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</li>
+    <br>
+    <li>The value of each crystal is hidden from you until you click on it.</li>
+    <br>
+    <li>Each time the game restarts, the game will change the values of each crystal.</li>
+
+    </ul>
+</div>
+
+
+<br>
+<div class = "container text-white text-center">
+
+    <h4>Random Number:  <span id='randomNumber-text'></span> </h4>
+   
+
+</div>
+
+<div class='container text-center'>
+    <div class = 'row'>
+        <div class = "col text-white">
+    <h4>Wins: <span id="wins-text"></span> </h4>
+    
+</div>
+
+        <div class = 'col text-white'>
+        <h4>Losses:  <span id="losses-text"></span> </h4>
+       
+    </div>
+</div>
+</div>
+
+<br>
+<div class="container">
+    <div class = 'row'>
+
+<div class = 'col'>
+<div id="crystalBlue">
+    </div>
+    </div>
+
+    <div class = 'col'>
+            <div id="crystalGreen">
+                </div>
+                </div>
+
+                <div class = 'col'>
+                        <div id="crystalPink">
+                            </div>
+                            </div>
+
+                            <div class = 'col'>
+                                    <div id="crystalPurple">
+                                        </div>
+                                        </div>
+
+</div>
+</div>
+<br>
+
+<div class = 'container text-white text-center'>
+    <h4>Your total score is: <span id='score-text'></span> </h4>
+    
+</div>
+
+<br>
+
+
+
+      
+<script src="./Assets/Javascript/game.js">
+</script> 
+
+</body>
+</html>
